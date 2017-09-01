@@ -1,0 +1,36 @@
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+div.coupondesc h3, div.coupondesc p {
+  font-family: sans-serif;
+}
+
+div.coupondesc h3 {
+  font-size: 1.25em;
+  margin-bottom: 1rem;
+}
+
+div.coupondesc p {
+  font-size: .9em;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.descbttn h4 {
+  width: 60%;
+  display: inline-block;
+  font-size: 1.55em;
+}
+
+.descbttn i {
+  position: absolute;
+  top: -.25rem;
+  right: .5rem;
+  font-size: 5em;
+  color: #E5553A;
+}

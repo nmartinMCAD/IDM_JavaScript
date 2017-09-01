@@ -1,0 +1,36 @@
+article.coupon {
+  width: 700px;
+  position: relative;
+}
+
+div.couponheader {
+  background-color: #C93042;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+div.coupondesc {
+  width: 40%;
+  background-color: #F6485F;
+  color: #fff;
+  float: right;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  padding: 1rem 1rem 9rem 1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+div.descbttn {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background-color: #FFC5C1;
+  color: #562612;
+  border-radius: 15px;
+  padding: .5rem;
+  position: relative;
+}
