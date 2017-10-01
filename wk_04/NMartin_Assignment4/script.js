@@ -31,8 +31,7 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-  console.log("This speech was written by "
-              + speeches[0].author + " in " + speeches[0].year + ". It is " + speeches[0].bce + " that this year is B.C.E.");
+  console.log("This speech was written by " + speeches[0].author + " in " + speeches[0].year + ". It is " + speeches[0].bce + " that this year is B.C.E.");
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
