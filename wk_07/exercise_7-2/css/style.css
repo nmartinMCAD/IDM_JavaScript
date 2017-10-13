@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+aside.changeButtons {
+  font-family: Helvetica, sans-serif;
+  height: 80%;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.changeButtons h3 {
+  margin-bottom: 3rem;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  cursor: cell;
+}
+
+div{
+  background-color: #FEAC2B;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: .8em;
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div h1 {
+  margin: 2rem;
+}
+
+div h2 {
+  margin-left: 2rem;
+  width: 90%;
+}
+
+img {
+  width: 100%;
+}
+
+/* changing styles applied with JavaScript */
+div, .styleOne, .styleTwo, .styleThree, .styleFour {
+  -webkit-transition: background-color 2000ms ease-out;
+  -moz-transition: background-color 2000ms ease-out;
+  -o-transition: background-color 2000ms ease-out;
+  transition: background-color 2000ms ease-out;
+}
+
+.styleOne {
+  background-color: #05A57A;
+}
+
+.styleTwo {
+  background-color: #2081BE;
+}
+
+.styleThree {
+  background-color: #C93042;
+}
+
+.styleFour {
+  background-color: #000;
+}
