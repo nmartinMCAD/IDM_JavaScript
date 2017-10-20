@@ -1,0 +1,263 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("../img/space.jpg");
+  background-size: 130%;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+div.instructions {
+  width: 100vw;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+div.spaceshipContainer {
+  width: 50px;
+  height: 100px;
+  float: left;
+  margin-top: 19rem;
+  margin-left: 15vw;
+}
+
+img#laserBeam {
+  width: 10%;
+  position: absolute;
+  top: 47%;
+}
+
+.reload {
+  left: 20%;
+  display: none;
+}
+
+.fire {
+  left: 20%;
+	animation-duration: .5s;
+	animation-name: fire;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fire {
+	20% {
+		left: 20%;
+	}
+
+  40% {
+		left: 40%;
+	}
+
+  60% {
+		left: 60%;
+	}
+
+  80% {
+		left: 80%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+div.asteroidContainer {
+  width: 300px;
+  height: 300px;
+  float: right;
+  position: relative;
+  margin-top: 13rem;
+  margin-right: 10vw;
+}
+
+img.asteroidChunk {
+  width: 50px;
+}
+
+img.asteroidChunk {
+  position: absolute;
+}
+
+img#chunk1 {
+  top: 35%;
+  left: 35%;
+}
+
+img#chunk2 {
+  top: 34%;
+  right: 42.5%;
+}
+
+img#chunk3 {
+  bottom: 42.5%;
+  left: 37.5%;
+}
+
+img#chunk4 {
+  bottom: 40%;
+  right: 42.5%;
+}
+
+
+body.laserBlast img#chunk1 {
+  top: 35%;
+  animation-duration: 1s;
+	animation-name: breakUp1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: .1s;
+}
+
+@keyframes breakUp1 {
+  20% {
+    top: 35%;
+  }
+
+  40% {
+		top: 25%;
+	}
+
+  60% {
+		top: 17%;
+	}
+
+  80% {
+		top: 11%;
+	}
+
+	100% {
+		top: 6%;
+	}
+}
+
+body.laserBlast img#chunk2 {
+  top: 34%;
+  right: 42.5%;
+  animation-duration: 1s;
+	animation-name: breakUp2;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: .1s;
+}
+
+@keyframes breakUp2 {
+  20% {
+		top: 34%;
+    right: 42.5%;
+	}
+
+  40% {
+    top: 24%;
+    right: 32.5%;
+  }
+
+  65% {
+		top: 16%;
+    right: 24.5%;
+	}
+
+  90% {
+		top: 10%;
+    right: 18.5%;
+	}
+
+	100% {
+		top: 4%;
+    right: 14.5%;
+	}
+}
+
+body.laserBlast img#chunk3 {
+  bottom: 42.5%;
+  left: 37.5%;
+  animation-duration: 1s;
+	animation-name: breakUp3;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: .1s;
+}
+
+@keyframes breakUp3 {
+  20% {
+    bottom: 42.5%;
+    left: 37.5%;
+  }
+
+  40% {
+    bottom: 32.5%;
+    left: 27.5%;
+	}
+
+  60% {
+    bottom: 24.5%;
+    left: 19.5%;
+	}
+
+  80% {
+    bottom: 18.5%;
+    left: 11.5%;
+	}
+
+	100% {
+    bottom: 12.5%;
+    left: 7.5%;
+	}
+}
+
+body.laserBlast img#chunk4 {
+  bottom: 40%;
+  right: 42.5%;
+  animation-duration: 1s;
+	animation-name: breakUp4;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: .1s;
+}
+
+@keyframes breakUp4 {
+  20% {
+    bottom: 40%;
+    right: 42.5%;
+  }
+
+  40% {
+    bottom: 30%;
+    right: 32.5%;
+	}
+
+  60% {
+    bottom: 22%;
+    right: 24.5%;
+	}
+
+  80% {
+    bottom: 16%;
+    right: 18.5%;
+	}
+
+	100% {
+    bottom: 8%;
+    right: 12.5%;
+	}
+}
