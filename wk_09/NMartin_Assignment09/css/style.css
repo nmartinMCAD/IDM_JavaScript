@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  background-color: #222222;
+  color: white;
+  padding: 2rem;
+  font-size: 5vw;
+}
+
+button {
+  margin-top: 2rem;
+  font-size: 1em;
+  padding: 1.5rem;
+  background-color: #129ACB;
+  color: white;
+  border: none;
+}
+
+br {
+  content: "spacer";
+  display: block;
+  margin-top: 2rem;
+}
+
+div#box {
+  margin: auto;
+  height: 130px;
+  width: 600px;
+  padding: 3rem;
+  border: 1px solid #222222;
+  background-color: #424B5E;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#box {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: white;
+}
