@@ -8,18 +8,28 @@
     <script type="text/javascript">
         $("document").ready(function() {
             $("#setProp").click(function(evt) {
+              $("#example p").css("text-decoration", "overline")
+                             .css("font-size", "+=1pt");
             });
 
             $("#setProps").click(function(evt) {
+              $("#example p").css({
+                  "font-weight" : "bold",
+                  "color" : "red",
+                  "text-decoration" : "underline"
+              })
             });
 
             $("#addCl").click(function(evt) {
+              $("#example p").addClass("pClass");
             });
 
             $("#rmCl").click(function(evt) {
+              $("#example p").removeClass("pClass");
             });
 
             $("#toggleCl").click(function(evt) {
+              $("#example p").toggleClass("pClass");
             });
         });
     </script>
@@ -28,7 +38,7 @@
             color: green;
             text-transform: uppercase
         }
-        
+
         button {
             margin: 5pt 5pt 0 0;
         }

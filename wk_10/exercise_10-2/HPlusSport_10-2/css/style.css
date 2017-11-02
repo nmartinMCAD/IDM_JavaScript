@@ -22,7 +22,7 @@ body {
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -321,11 +321,6 @@ em {
     /*.product-list*/
 }
 
-#productControls {
-    margin-left: 5pt;
-    margin-bottom: 10pt;
-}
-
 #products .imageheader {
     background: -webkit-linear-gradient(top, transparent, transparent), url(../images/backgrounds/swimming.jpg);
     background: linear-gradient(180deg, transparent, transparent), url(../images/backgrounds/swimming.jpg);
@@ -390,7 +385,6 @@ em {
     -webkit-animation: a 1s;
     animation: a 1s
 }
-
 
 @-webkit-keyframes a {
     0% {
