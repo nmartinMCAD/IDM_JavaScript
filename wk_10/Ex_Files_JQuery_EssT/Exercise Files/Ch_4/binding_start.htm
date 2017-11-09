@@ -7,7 +7,24 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
         $(function() {
+          $("#evtTarget").on("mouseover mouseleave", highlight);
+
+          $("#evtTarget").on("click", function(evt) {
+            $("#evtTarget").off("mouseover mouseleave", highlight);
+            $("#evtTarget").html("<p>Hover effect shut off</p>");
+            $("#evtTarget").removeClass("highlighted");
+          })
+
+          $("#textEntry").on("keypress", function(evt) {
+            $("#keyPress").text(String.fromCharCode(evt.charCode));
+          });
         });
+
+
+
+        function highlight() {
+          $("#evtTarget").toggleClass("highlighted");
+        }
     </script>
     <style type='text/css'>
         .highlighted {
