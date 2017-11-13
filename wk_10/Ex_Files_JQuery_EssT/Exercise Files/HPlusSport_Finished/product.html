@@ -27,10 +27,10 @@
             }
             prodName = decodeURIComponent(prodName);
             prodID = decodeURIComponent(prodID);
-            
+
             // set the product name in the proper placeholder
             $("#productName").text(prodName);
-            
+
             // retrieve the product information via AJAX
             $.getJSON("product-data.json")
                 .done(function(prodData) {
