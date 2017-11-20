@@ -4,7 +4,6 @@
   -Locates HTML by ID
 	-Changes class of target element
 */
-
 function laserBlast(elementID, newClass) {
 	document.getElementById(elementID).setAttribute("class", newClass);
 };
@@ -15,7 +14,6 @@ function laserBlast(elementID, newClass) {
   -Locates HTML by ID
 	-Changes inner HTML
 */
-
 function newInstruction(elementID, newInstruction) {
 	document.getElementById(elementID).innerHTML = newInstruction;
 };
