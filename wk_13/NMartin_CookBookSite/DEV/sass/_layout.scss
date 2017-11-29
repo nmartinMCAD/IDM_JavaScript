@@ -8,8 +8,7 @@ header {
 div.pageTitle {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 ul.recipeControllers {
@@ -20,7 +19,8 @@ ul.recipeControllers {
 div.startInstructionContainer {
   position: absolute;
   top: 50%;
-  right: 17.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 
