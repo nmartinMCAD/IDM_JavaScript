@@ -5,9 +5,12 @@
      <meta charset="UTF-8">
      <title>Recipes</title>
      <link href="https://fonts.googleapis.com/css?family=Lobster|Questrial" rel="stylesheet">
+     <link rel="stylesheet" href="css/animate.css">
      <link rel="stylesheet" href="css/css.css">
      <script src="https://use.fontawesome.com/9fd44985dc.js"></script>
-     <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js"></script>
+     <script type="text/javascript" src="js/jquery.textillate.js"></script>
 
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,11 +21,13 @@
 
   <header>
     <div class="pageTitle">
-      <i class="fa fa-cutlery" aria-hidden="true"></i>
-      <h1>Provisions</h1>
+      <h1>Provisions &amp; Such</h1>
+      <i class="fa fa-chevron-up animated infinite rubberBand" aria-hidden="true"></i>
     </div>
+    <img class="headerImage" src="img/food.svg" alt="">
   </header>
 
+<main>
   <nav>
     <ul class="recipeControllers">
       <li class="recipeButton" data-rel="recipe1">Sarah's Applesauce</li>
@@ -35,13 +40,12 @@
     </ul>
   </nav>
 
-
-  <main class="recipeContainer">
+  <section class="recipeContainer">
     <div class="startInstructionContainer">
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
       <h2 class="instruction">Click a Recipe on the Left to Get Started</h2>
     </div>
-    
+
     <section class="recipe" id="recipe1">
       <h3>Sarah's Applesauce</h3>
 
@@ -309,7 +313,8 @@
         <p>6.	Mix soy sauce mixture and remaining tofu strips into the saucepan. Return to boil, and stir in the bamboo fungus, chili oil, and sesame oil. Garnish with green onion to serve.</p>
       </div>
     </section>
-  </main>
+  </section>
+</main>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

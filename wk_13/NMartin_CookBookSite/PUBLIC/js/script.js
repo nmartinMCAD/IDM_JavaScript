@@ -1,39 +1,46 @@
 $("document").ready(function() {
-  $(".startInstructionContainer").fadeIn( 1000 , animateArrow())
+  $(".startInstructionContainer").fadeIn( 1000 );
+  $("main").hide();
 });
 
-$(".recipeButton").mouseover(function () {
-  $(this).css("width", "110%");
-})
-
-$(".recipeButton").on("mouseleave", function () {
-  $(this).css("width", "100%");
-})
+$(".pageTitle i").click(function (evt) {
+  $(".pageTitle i").fadeOut( 300 );
+  $("header").animate({
+    height: "90px"
+  }, 1000, 'linear');
+  $(".pageTitle").animate({
+    top: "-=20%",
+  }, 1000, 'linear');
+  $(".pageTitle").animate({
+    left: "-=35%",
+  }, 500, 'linear', textAnimation);
+});
 
 $(".recipeButton").click(function (evt) {
-  $(this).css({
-  "backgroundColor" : "#8C2540",
-  "color" : "#fff",
-  "borderColor" : "#8C2540",
-  "width" : "110%",})
-  $(this).off("mouseleave")
-  $(".recipeButton").not(this).removeAttr("style")
+  $(this).css({})
+  //$(this).off("mouseleave")
+  //$(".recipeButton").not(this).removeAttr("style")
   $(".startInstructionContainer").detach()
   $(".recipe").fadeOut( 1000 );
   $("#" + $(this).data("rel")).fadeIn( 1000 )
 });
 
 
-/*Function to move arrow icon back and forth
--Locateds icon via class name
--Moves the arrow to the left
--Moves the arrow back to the original position
--Uses the same function as a callback function once the animation is complete
--This sets the arrow in a repating loop*/
-function animateArrow () {
-  $(".fa-chevron-left").animate({
-    marginRight: "+=20"
-  }, 1000, 'linear').animate({
-    marginRight: "-=20"
-  }, 1000, 'linear', animateArrow);
-};
+// FUNCTIONS
+
+function textAnimation () {
+  $("main").fadeIn( 2000 );
+  $(".recipeButton").textillate({
+    in: {
+      effect: 'flipInX',
+      delay: 50
+    }
+  });
+  $(".instruction").textillate({
+    in: {
+      effect: 'bounceInUp',
+      sync: false,
+      sequence: true
+    }
+  });
+}

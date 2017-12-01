@@ -8,13 +8,16 @@ h1 {
   display: inline;
   font-family: $header-font;
   font-size: 3em;
-  color: $white;
+  color: $yellow;
 }
 
 .pageTitle i {
-  color: $white;
-  font-size: 3em;
-  margin: 1.5rem;
+  color: $yellow;
+  font-size: 5em;
+  position: absolute;
+  left: 37.5%;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 li.recipeButton {
@@ -22,7 +25,7 @@ li.recipeButton {
   cursor: pointer;
   border: 1px solid $black;
   border-left: none;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem .5rem;
 }
 
@@ -53,4 +56,8 @@ p.recipeTagline {
 h4 {
   display: inline;
   border-bottom: 1px solid $black;
+}
+
+.directions p {
+  margin-top: 1rem;
 }
