@@ -38,8 +38,8 @@ var interestIcon = L.icon({
     popupAnchor:  [-12, -30 ] // point from which the popup should open relative to the iconAnchor
 });
 
-var vallesMarker = L.marker([-240, 300], {icon: interestIcon}).bindPopup("<h3>Valles Marineris</h3><h4>13° 54′ 0″ S, 59° 12′ 0″ W</h4>")
-    noctisMarker = L.marker([-235, 230], {icon: interestIcon}).bindPopup("<h3>Noctis Labyrinthus</h3><h4>7° 0′ 0″ S, 102° 12′ 0″ W</h4>")
+var vallesMarker = L.marker([-240, 300], {icon: interestIcon}).bindPopup("<h3>Valles Marineris</h3><h4>13° 54′ 0″ S, 59° 12′ 0″ W</h4><h5>more info</h5>")
+    noctisMarker = L.marker([-235, 230], {icon: interestIcon}).bindPopup("<h3>Noctis Labyrinthus</h3><h4>7° 0′ 0″ S, 102° 12′ 0″ W</h4><h5>more info</h5>")
 
 var interestMarkers = L.layerGroup([vallesMarker, noctisMarker]);
 
@@ -51,48 +51,13 @@ var landingIcon = L.icon({
     popupAnchor:  [-12, -30 ] // point from which the popup should open relative to the iconAnchor
 });
 
-var curiosityLanding = L.marker([-227.5, 885], {icon: landingIcon}).bindPopup("<h3>Curiosity Rover</h3><h4>Gale Crater</h4>")
+var curiosityLanding = L.marker([-227.5, 885], {icon: landingIcon}).bindPopup("<h3>Curiosity Rover</h3><h4>Gale Crater</h4><h5>more info</h5>")
 
 var landingMarkers = L.layerGroup([curiosityLanding]);
 
 var overlays = {
-		"points of interest": interestMarkers,
-    "landing sites": landingMarkers
+		"Points of Interest": interestMarkers,
+    "Landing Sites": landingMarkers
 	};
 
 L.control.layers(null, overlays).addTo(map);
-
-
-
-
-var menuTitle = $('h1');
-var menuTools = $('h2');
-
-
-$(".hamburger").click(function (evt) {
-  $(".hamburger").toggleClass( "is-active" );
-  $(".toolsMenu").toggle();
-  menuTitle.textillate({
-    in: {
-      effect: 'fadeInRight',
-      sync: true,
-    }
-  });
-  menuTools.textillate({
-    in: {
-      effect: 'fadeInRight',
-      sync: true,
-    }
-  });
-});
-
-/*
-$('#pointsOfInterest').click(function (evt) {
-  vallesMarker.setOpacity(1);
-  noctisMarker.setOpacity(1);
-});
-
-$('#landingSites').click(function (evt) {
-  curiosityLanding.setOpacity(1);
-});
-*/
