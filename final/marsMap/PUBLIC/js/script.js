@@ -7,7 +7,8 @@ var map = L.map('marsMap', {
   maxZoom: 4,
   center: [400, 500],
   zoom: 1,
-  crs: L.CRS.Simple
+  crs: L.CRS.Simple,
+  layers: false
 });
 
 // dimensions of the image
@@ -30,39 +31,36 @@ map.setMaxBounds(bounds);
 
 
 
-
-
-var interestMarker = L.icon({
+var interestIcon = L.icon({
     iconUrl: 'img/interestMarker.png',
-
     iconSize:     [24, 24], // size of the icon
     iconAnchor:   [24, 24], // point of the icon which will correspond to marker's location
     popupAnchor:  [-12, -30 ] // point from which the popup should open relative to the iconAnchor
 });
 
-var vallesMarker = L.marker([-240, 300], {icon: interestMarker}).addTo(map);
-var noctisMarker = L.marker([-235, 230], {icon: interestMarker}).addTo(map);
+var vallesMarker = L.marker([-240, 300], {icon: interestIcon}).bindPopup("<h3>Valles Marineris</h3><h4>13° 54′ 0″ S, 59° 12′ 0″ W</h4>")
+    noctisMarker = L.marker([-235, 230], {icon: interestIcon}).bindPopup("<h3>Noctis Labyrinthus</h3><h4>7° 0′ 0″ S, 102° 12′ 0″ W</h4>")
 
-vallesMarker.bindPopup("<h3>Valles Marineris</h3><h4>13° 54′ 0″ S, 59° 12′ 0″ W</h4>").setOpacity(0)
-noctisMarker.bindPopup("<h3>Noctis Labyrinthus</h3><h4>7° 0′ 0″ S, 102° 12′ 0″ W</h4>").setOpacity(0)
+var interestMarkers = L.layerGroup([vallesMarker, noctisMarker]);
 
 
-var landingMarker = L.icon({
+var landingIcon = L.icon({
     iconUrl: 'img/missionLanding.png',
-
     iconSize:     [24, 24], // size of the icon
     iconAnchor:   [24, 24], // point of the icon which will correspond to marker's location
     popupAnchor:  [-12, -30 ] // point from which the popup should open relative to the iconAnchor
 });
 
-var curiosityLanding = L.marker([-227.5, 885], {icon: landingMarker}).addTo(map);
+var curiosityLanding = L.marker([-227.5, 885], {icon: landingIcon}).bindPopup("<h3>Curiosity Rover</h3><h4>Gale Crater</h4>")
 
+var landingMarkers = L.layerGroup([curiosityLanding]);
 
-curiosityLanding.bindPopup("<h3>Curiosity Rover</h3><h4>Gale Crater</h4>").setOpacity(0);
+var overlays = {
+		"points of interest": interestMarkers,
+    "landing sites": landingMarkers
+	};
 
-
-
-
+L.control.layers(null, overlays).addTo(map);
 
 
 
@@ -88,6 +86,7 @@ $(".hamburger").click(function (evt) {
   });
 });
 
+/*
 $('#pointsOfInterest').click(function (evt) {
   vallesMarker.setOpacity(1);
   noctisMarker.setOpacity(1);
@@ -96,3 +95,4 @@ $('#pointsOfInterest').click(function (evt) {
 $('#landingSites').click(function (evt) {
   curiosityLanding.setOpacity(1);
 });
+*/
