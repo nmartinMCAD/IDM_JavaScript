@@ -1,2 +1,2 @@
-html{box-sizing:border-box;overflow:scroll}*,*:before,*:after{box-sizing:inherit;margin:0;padding:0}
+html{box-sizing:border-box;overflow:scroll}*,*:before,*:after{box-sizing:inherit;margin:0;padding:0}#marsMap{height:100vh}section.toolsMenu{display:none;height:100%;width:300px;position:absolute;top:0;right:0;z-index:7500;background-color:rgba(28,38,48,0.8);border-left:2px solid #222}div.featureToggles{width:90%;margin:auto;margin-top:2rem}html{font-family:"Poiret One",cursive;color:#fff}.toolsHeader{color:white;padding:1rem}h1{font-family:"Megrim",cursive;display:inline;font-size:2em}h2{margin-bottom:1.5rem}h3{font-family:"Poiret One",cursive}.fa-times-hexagon{float:right;cursor:pointer}
 /*# sourceMappingURL=css.css.map */
