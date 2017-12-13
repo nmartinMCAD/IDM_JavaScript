@@ -2,20 +2,20 @@
   height: 100vh;
 }
 
-section.toolsMenu {
-  display: none;
+.lightboxHeaderInfo {
+  width: 250px;
   height: 100%;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 7500;
-  background-color: $transBlack;
-  border-left: 2px solid $black;
+  height: 337px;
+  text-align: center;
+  position: fixed;
 }
 
-div.featureToggles {
-  width: 90%;
-  margin: auto;
+div.lightboxScrollContent {
+  width: 70%;
+  float: right;
+}
+
+div.specs {
   margin-top: 2rem;
+  padding-left: .5rem;
 }
