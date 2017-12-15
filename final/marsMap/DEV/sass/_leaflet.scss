@@ -235,7 +235,7 @@
 }
 
 .leaflet-grab {
-	cursor: url('../img/customAllScroll.png'), auto;
+	cursor: url('../img/customPointer.png'), auto;
 }
 
 .leaflet-crosshair,
@@ -414,7 +414,6 @@
 	font-family: $copy;
 	font-size: 2em;
 	background: $transBlack;
-	height: 400px;
 }
 
 .leaflet-control-layers-scrollbar {
@@ -431,16 +430,17 @@
 
 .leaflet-control-layers label {
 	display: block;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.leaflet-control-layers label:hover {
+	color: $yellow;
+	cursor: pointer;
 }
 
 .leaflet-control-layers input {
 	height: 17px;
 	width: 20px;
-}
-
-.leaflet-control-layers input:checked {
-	background: green;
 }
 
 .leaflet-control-layers-separator {
@@ -458,19 +458,18 @@
 /* attribution and scale controls */
 
 .leaflet-container .leaflet-control-attribution {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.7);
+	background: $transBlack;
 	margin: 0;
 }
 
 .leaflet-control-attribution,
 .leaflet-control-scale-line {
-	padding: 0 5px;
-	color: #333;
+	padding: .0 5px;
 }
 
 .leaflet-control-attribution a {
 	text-decoration: none;
+	color: $yellow;
 }
 
 .leaflet-control-attribution a:hover {

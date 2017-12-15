@@ -51,9 +51,20 @@ span {
   font-family: $header;
 }
 
+ul.specsList {
+  text-align: left;
+}
+
+.specsList li {
+  list-style-type: circle;
+  margin-left: 1.2rem;
+  font-size: 1.2em;
+}
+
 .lightboxScrollContent p {
   max-width: 900px;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: left;
 }

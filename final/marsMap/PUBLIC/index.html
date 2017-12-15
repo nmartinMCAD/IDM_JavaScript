@@ -3,15 +3,13 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>Mars</title>
+     <title>Mars Map</title>
      <meta name="description" content="DESCRIPTION">
      <link rel="stylesheet" href="css/css.css">
      <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Electrolize" rel="stylesheet">
      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
      <script type="text/javascript" src="js/leaflet.js"></script>
      <script type="text/javascript" src="js/featherlight.min.js"></script>
-     <script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js"></script>
-     <script type="text/javascript" src="js/jquery.textillate.js"></script>
 
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,18 +23,18 @@
   <div id="marsMap"></div>
 
 
-<!--Points of Interest Lightboxes-->
+<!--Geographic Features Lightboxes-->
 
   <div class="lightboxGloabalOverride" id="vallesLightbox">
     <div class="lightboxHeaderInfo">
       <h4>Valles Marineris</h4>
       <p>"Mariner Valleys"</p>
       <div class="specs">
-        <h5><span>lat</span> : 13° 54′ 0″ S</h5>
-        <h5><span>long</span> : 59° 12′ 0″ W</h5>
-        <h5><span>length</span> : +4000km</h5>
-        <h5><span>max width</span> : 600km</h5>
-        <h5><span>max depth</span> : 8km</h5>
+        <h5><span>lat</span>: 13° 54′ 0″ S</h5>
+        <h5><span>long</span>: 59° 12′ 0″ W</h5>
+        <h5><span>length</span>: +4000km</h5>
+        <h5><span>max width</span>: 600km</h5>
+        <h5><span>max depth</span>: 8km</h5>
       </div>
     </div>
 
@@ -58,10 +56,8 @@
       <h4>Noctis Labyrinthus</h4>
       <p>"Labyrinth of the Night"</p>
       <div class="specs">
-        <h5><span>lat</span> : 7° 0′ 0″ S</h5>
-        <h5><span>long</span> : 102° 12′ 0″ W</h5>
-        <h5><span>length</span> : +4000 km (2500 mi)</h5>
-        <h5><span>max depth</span> : 8km</h5>
+        <h5><span>lat</span>: 7° 0′ 0″ S</h5>
+        <h5><span>long</span>: 102° 12′ 0″ W</h5>
       </div>
     </div>
 
@@ -70,33 +66,316 @@
     <div class="lightboxScrollContent">
       <img src="img/noctisLabyrinthus.jpg" alt="3d rendering of ridges within Noctis Labyrinthus">
 
-      <p>Known as the Grand Canyon of Mars, Valles Marineris is one of the most ditinguishable geographic features that marks the Martian surface.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="olympusLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Olympus Mons</h4>
+      <p>"Mount Olympus"</p>
+      <div class="specs">
+        <h5><span>lat</span>: 18° 39′ 0″ N</h5>
+        <h5><span>long</span>: 226° 12′ 0″ E</h5>
+        <h5><span>elevation</span>: 32km (76,000ft)</h5>
+        <h5><span>diameter</span>: 600km</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/olympusMons.jpg" alt="3d artist rendering of Olympus Mons from space">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <img src="img/olympusOverhead.jpg" alt="satellite imagery of Olympus Mons">
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="hellasLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Hellas Planitia</h4>
+      <p>"Hellenic Plain"</p>
+      <div class="specs">
+        <h5><span>lat</span>: 42° 24′ 0″ S</h5>
+        <h5><span>long</span>: 70° 30′ 0″ E</h5>
+        <h5><span>diameter</span>: 2,300km</h5>
+        <h5><span>max depth</span>: 7,152m (23,465ft)</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/hellasPlanitia.jpg" alt="satellite imagery of Hellas Planitia">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <img src="img/hellasTopo.jpg" alt="topogrpahic rendering of Hellas Planitia">
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="elysiumLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Elysium Mons</h4>
+      <p>"Mount Elysium"</p>
+      <div class="specs">
+        <h5><span>lat</span>: 25° 1′ 12″ N</h5>
+        <h5><span>long</span>: 147° 12′ 36″ E</h5>
+        <h5><span>elevation</span>: 13.9km (52,000ft)</h5>
+        <h5><span>diameter</span>: 240km</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/elysiumMons.jpg" alt="satellite imagery of Hellas Planitia">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
   </div>
 
 
-<!--Landing Sites Lightboxes-->
+<!--Mission Landing Sites Lightboxes-->
 
-<div class="lightboxGloabalOverride" id="curiosityLightbox">
-  <div class="lightboxHeaderInfo">
-    <h4>Curiosity Rover</h4>
-    <p>Gale Crater</p>
-    <div class="specs">
-      <h5><span>launch date</span> : 7° 0′ 0″ S</h5>
-      <h5><span>landing date</span> : 102° 12′ 0″ W</h5>
-      <h5><span>length</span> : +4000 km (2500 mi)</h5>
-      <h5><span>max depth</span> : 8km</h5>
+  <div class="lightboxGloabalOverride" id="curiosityLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Curiosity Rover</h4>
+      <p>Gale Crater</p>
+      <div class="specs">
+        <h5><span>launch</span>: Nov 26, 2011</h5>
+        <h5><span>landing</span>: August 6, 2012</h5>
+        <h5><span>status</span>: active</h5>
+        <h5><span class="underline">objective(s):</span></h5>
+        <ul class="specsList">
+          <li>geology</li>
+          <li>natural history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/curiosityCG.jpg" alt="self portrait of Curiosity Rover on Mars">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 
-  <div class="clearfix"></div>
+  <div class="lightboxGloabalOverride" id="vikingOneLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Viking One Lander</h4>
+      <p>Chryse Planitia</p>
+      <div class="specs">
+        <h5><span>launch</span>: Aug 20, 1975</h5>
+        <h5><span>landing</span>: Jul 20, 1976</h5>
+        <h5><span>status</span>:  inactive</h5>
+        <h5><span>mission end</span>: Nov 13, 1982</h5>
+        <h5><span class="underline">objective(s):</span></h5>
+        <ul class="specsList">
+          <li>landing</li>
+          <li>imaging</li>
+          <li>biology</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="lightboxScrollContent">
-    <img src="img/curiosityCG.jpg" alt="self portrait of Curiosity Rover on Mars">
+    <div class="clearfix"></div>
 
-    <p>Known as the Grand Canyon of Mars, Valles Marineris is one of the most ditinguishable geographic features that marks the Martian surface.</p>
+    <div class="lightboxScrollContent">
+      <img src="img/vikingOneFirst.jpg" alt="first image captured of Martian surface, by Viking One">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
-</div>
+
+  <div class="lightboxGloabalOverride" id="pathfinderLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Pathfinder Rover</h4>
+      <p>Ares Vallis</p>
+      <div class="specs">
+        <h5><span>launch</span>: Dec 4, 1996</h5>
+        <h5><span>landing</span>: Jul 4, 1997</h5>
+        <h5><span>status</span>:  inactive</h5>
+        <h5><span>mission end</span>: Sep 27, 1997</h5>
+        <h5><span class="underline">objective(s):</span></h5>
+        <ul class="specsList">
+          <li>engineering</li>
+          <li>meteorology</li>
+          <li>climatology</li>
+          <li>geology</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/pathfinderRover.jpg" alt="first image captured of Martian surface, by Viking One">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="opportunityLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Opportunity Rover</h4>
+      <p>Meridiani Planum</p>
+      <div class="specs">
+        <h5><span>launch</span>: July 8, 2003</h5>
+        <h5><span>landing</span>: January 25, 2004</h5>
+        <h5><span>status</span>:  active</h5>
+        <h5><span class="underline">objective(s):</span></h5>
+        <ul class="specsList">
+          <li>geology</li>
+          <li>imaging</li>
+          <li>natural history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/opportunitySelfie.jpg" alt="self portrait of opportunity rover">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="vikingTwoLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Viking Two Lander</h4>
+      <p>Utopia Planitia</p>
+      <div class="specs">
+        <h5><span>launch</span>: September 9, 1975</h5>
+        <h5><span>landing</span>: September 3, 1976</h5>
+        <h5><span>status</span>:  inactive</h5>
+        <h5><span>mission end</span>: April 11, 1980</h5>
+        <h5><span class="underline">objective(s):</span></h5>
+        <ul class="specsList">
+          <li>landing</li>
+          <li>imaging</li>
+          <li>biology</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/vikingTwo.jpg" alt="Martian landscape captured by Viking Two">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+
+<!--Craters of Interest Lightboxes -->
+
+  <div class="lightboxGloabalOverride" id="bacolorLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Bacolor Crater</h4>
+      <p>Utopia Planitia</p>
+      <div class="specs">
+        <h5><span>lat</span>: 33° 0′ 0″ N</h5>
+        <h5><span>long</span>: 241° 24′ 0″ W </h5>
+        <h5><span>diameter</span>: 20.8km</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/bacolorCrater.jpg" alt="hi res satellite imagery of bacolor crater">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="huygensLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Huygens Crater</h4>
+      <p>Terra Sabaea</p>
+      <div class="specs">
+        <h5><span>lat</span>: 13° 54′ 0″ S</h5>
+        <h5><span>long</span>: 304° 24′ 0″ W</h5>
+        <h5><span>diameter</span>: 467.25km</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/huygensCrater.jpg" alt="satellite imagery of huygens crater">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="schiaparelliLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Schiaparelli Crater</h4>
+      <p>Terra Meridiani</p>
+      <div class="specs">
+        <h5><span>lat</span>: 2° 42′ 0″ S</h5>
+        <h5><span>long</span>: 16° 42′ 0″ E</h5>
+        <h5><span>diameter</span>: 459km</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/schiaparelliBasinCrater.jpg" alt="image of layered crater basin">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="victoriaLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Victoria Crater</h4>
+      <p>Meridiani Planum</p>
+      <div class="specs">
+        <h5><span>lat</span>: 2° 3′ 0″ S</h5>
+        <h5><span>long</span>:  5° 30′ 0″ W</h5>
+        <h5><span>diameter</span>: 730m</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/victoriaCrater.jpg" alt="satellite image of victoria crater">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="lightboxGloabalOverride" id="arimaLightbox">
+    <div class="lightboxHeaderInfo">
+      <h4>Arima Twin Craters</h4>
+      <p>Thaumasia Planum</p>
+      <div class="specs">
+        <h5><span>lat</span>: 	15° 48′ 0″ S</h5>
+        <h5><span>long</span>:  296° 18′ 0″ E</h5>
+        <h5><span>diameter</span>: 50km (each)</h5>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="lightboxScrollContent">
+      <img src="img/arimaCraters.jpg" alt="satellite image of Arima twin craters">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>
